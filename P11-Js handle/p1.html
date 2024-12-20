@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function otentikasi(){
+            const admin ="ahmad2017";
+            const passadmin ="integrity";
+
+            let uneame = document.getElementById ("username").value;
+            let pass = document.getElementById("pass").value;
+
+            if(uneame == admin && pass == passadmin) {
+                alert("sukses login");
+                return true;
+            }else{
+                alert("gagal login");
+                window.location.href ="",false;
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Login</h1>
+    <form method="post">
+        Username : <input type="text" nama="username"><br>
+        password : <input type="password" nama="pass"><br>
+        <input type="submit" value="Login" onclick="otentikasi()" >
+    </form>
+</body>
+</html>

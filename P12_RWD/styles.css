@@ -1,0 +1,56 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Gaya untuk kontainer gambar */
+  .image-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .image-container img {
+    width: 100%;
+    display: block;
+  }
+  
+  /* Gaya teks di atas gambar */
+  .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  /* Animasi teks yang muncul */
+  #animated-text {
+    margin: 20px;
+    opacity: 0;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    transform: scale(0.5);
+  }
+  
+  /* Teks menjadi terlihat */
+  #animated-text.show {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  

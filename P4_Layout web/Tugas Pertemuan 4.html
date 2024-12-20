@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Layout</title>
+    <style>
+    
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #e7c6ff;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+}   
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+article {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section {
+    background-color: #ffd6ff;
+    padding: 20px;
+    border: 1px solid #000;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+.menu a {
+    margin-right: 10px;
+}
+    </style>
+</head>
+<body style="color: #7d4380;">
+    <header>
+        <img src="Logo kprofile.jpeg" alt="Logo" width="100">
+    </header>
+    <header style="text-align: center;">
+        <h1>KPOP PROFILE</h1>
+    </header>
+
+    <nav style="background-color: #ffd6ff; padding: 10px; text-align: center;">
+        <div class="menu">
+        <a href="#"> Menu </a>
+        <a href="#"> Home </a>
+        <a href="#"> About </a>
+        <a href="#"> Contact  </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <article>
+        <section>
+            <h2>Article</h2>
+            <section>
+                <h3><a href="https://en.wikipedia.org/wiki/Boys_Planet" target="_blank">Boys Planet</a></h3>
+                <p><a href="https://en.wikipedia.org/wiki/Boys_Planet" target="_blank">Boys Planet (Korean: 보이즈 플래닛) is a 2023 South Korean reality competition show created by Mnet...</a></p>
+            </section>
+            <section>
+                <h3><a href="https://kprofiles.com/zerobaseone-members-profile/" target="_blank">Profile Zerobaseone Members</a></h3>
+                <p><a href="https://kprofiles.com/zerobaseone-members-profile/" target="_blank">ZEROBASEONE (ZB1) Members Profile and Facts...</a></p>
+            </section>
+            <section>
+                <h3><a href="https://www.antaranews.com/berita/3617367/zerobaseone-akan-ungkap-lagu-debut-in-bloom-pada-10-juli" target="_blank">Lagu Debut Zerobaseone</a></h3>
+                <p><a href="https://www.antaranews.com/berita/3617367/zerobaseone-akan-ungkap-lagu-debut-in-bloom-pada-10-juli" target="_blank">ZEROBASEONE akan ungkap lagu debut "In Bloom" pada 10 Juli...</a></p>
+            </section>
+            <section>
+                <h3><a href="https://www.merahputih.com/post/read/zerobaseone-gelar-konser-di-indonesia-ini-harga-tiketnya" target="_blank">Konser Tour Pertama Zerobaseone</a></h3>
+                <p><a href="https://www.merahputih.com/post/read/zerobaseone-gelar-konser-di-indonesia-ini-harga-tiketnya" target="_blank">ZEROBASEONE Gelar Konser di Indonesia, Ini Harga tiketnya...</a></p>
+            </section>
+        </section>
+        </article>
+
+        <aside style="color: #603263; flex: 1; background-color: #e7c6ff; padding: 20px; border: 1px solid #000;">
+            <h2>Aside</h2>
+            <div style="text-align: center;">
+            <div style="text-align: center;">
+                <a href="https://jabarekspres.com/berita/2023/06/19/ini-dia-member-zerobaseone-lolosan-boys-planet/">
+                  <img src="https://jabarekspres.com/wp-content/uploads/2023/04/Ini-Dia-Member-ZEROBASEONE-Lolosan-Boys-Planet.jpeg" alt="ZB1 Members" width="150px"></a>
+                  <p><a href="https://jabarekspres.com/berita/2023/06/19/ini-dia-member-zerobaseone-lolosan-boys-planet/" target="_blank">Ini Dia Member ZEROBASEONE Lolosan Boys Planet
+                  </a></p>
+              </div>
+              <a href="https://www.alonesia.com/entertainment/19113390411/zero-base-one-umumkan-album-sci-fi-romance-terbaru-cinema-paradiso">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4MjF0L9rvIN5RYMUoWzu1zXfA_qPc38hlJw&s" alt="ZB1 New Album" width="150px"></a>
+                <p><a href="https://www.alonesia.com/entertainment/19113390411/zero-base-one-umumkan-album-sci-fi-romance-terbaru-cinema-paradiso" target="_blank">Zero Base One Umumkan Album Sci-Fi Romance Terbaru 'Cinema Paradise'
+              </a></p>
+              </div>
+            
+        </aside>
+    </div>
+
+    <footer style="text-align: center; color: #603263; background-color: #e7c6ff; padding: 10px;text-align: center;">
+        <h4>&copy; Copyright by Silva - 2024</h4>
+    </footer>
+</body>
+</html>

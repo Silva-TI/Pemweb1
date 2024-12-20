@@ -1,0 +1,20 @@
+img {
+    width: 50px;
+    margin-right: 300px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    padding: 4%;
+    list-style: none;
+}
+
+li {
+    margin: 2px 7px;
+}
+
+header {
+    background-color: aquamarine;
+    margin: -18px -10px;
+}

@@ -1,0 +1,78 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+
+}
+
+.header {
+    grid-column: 1 / 3;
+    background-color: hsl(88, 50%, 53%);
+    height: 100px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.k2 {
+    display: flex;
+    gap: 2%;
+    margin-left: 2%;
+    margin-top: 2%;
+    width: 100%;
+}
+
+.kuning1 {
+    
+    background-color: #ffeb3b;
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+}
+
+.Biru {
+    grid-column: 1 / 3;
+    background-color: #03a9f4;
+    height: 150px;
+    width: 82%;
+    border: 1px solid black;
+    
+}
+
+
+
+.mb {
+    display: flex;
+    gap: 2%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.Merah {
+    background-color: #ff5722;
+    grid-column: 1 / 3;
+    height: 150px;
+    width: 80%;
+    border: 1px solid black;
+}
+
+.kuning2 {
+    background-color: #ffeb3b;
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+}
+
+

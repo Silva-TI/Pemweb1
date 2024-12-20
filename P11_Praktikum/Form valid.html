@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Form Validasi</h1>
+    <form id="form-validasi">
+        <label for="nama-pelanggan">Nama Pelanggan:</label>
+        <input type="text" id="nama-pelanggan" name="nama-pelanggan">
+        <span class="error" id="error-nama-pelanggan"></span>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <span class="error" id="error-email"></span>
+        <br><br>
+
+        <label for="jam-keberangkatan">Jam Keberangkatan:</label>
+        <input type="text" id="jam-keberangkatan" name="jam-keberangkatan" placeholder="HH.mm">
+        <span class="error" id="error-jam-keberangkatan"></span>
+        <br><br>
+
+        <label for="tujuan-keberangkatan">Tujuan Keberangkatan:</label>
+        <input type="text" id="tujuan-keberangkatan" name="tujuan-keberangkatan">
+        <span class="error" id="error-tujuan-keberangkatan"></span>
+        <br><br>
+
+        <label for="jumlah-tiket">Jumlah Tiket:</label>
+        <input type="number" id="jumlah-tiket" name="jumlah-tiket" min="1" max="10">
+        <span class="error" id="error-jumlah-tiket"></span>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="hasil-validasi"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

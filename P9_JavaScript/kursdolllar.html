@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Kurs Dollar</title>
+</head>
+<body>
+    <h3> Menghitung Kurs Rupiah ke Dollar</h3>
+    <input type="number" id="Rupiah" placeholder="Masukkan Jumlah Rupiah" onkeyup="RupiahkeDollar()">
+    <p> Nilai Dollar : $ <span id="Dollar"></span></p>
+
+    <script>
+        function    RupiahkeDollar(){
+            let Rupiah = document.getElementById
+            ('Rupiah').value;
+
+            let Dollar = 15926
+            document.getElementById('Dollar').innerHTML = Rupiah/Dollar;
+        }
+    </script>
+</body>
+</html>

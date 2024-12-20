@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Javasrcipt</title>
+</head>
+<body>
+    <h1>Form Perhitungan Luas dan Keliling Lingkaran</h1>
+    <input type="number" id="jari" placeholder="Masukkan Jari Jari">
+    <button onclick="HitungLingkaran()">Hitung!</button>
+    <p>Luas Lingkaran : <span id="LuasLingkaran">0</span></p>
+    <p>Keliling Lingkaran : <span id="KelilingLingkaran">0</span></p>
+    <script>
+        let nama = "Silva Nurzanatul Dahmalena"  
+        console.log("nama");
+        
+        function HitungLingkaran(){
+            let jari_jari = document.getElementById("jari").value;
+            console.log(jari_jari);
+            const phi = 3.14;
+
+            let luas = phi * (jari_jari**2);
+            console.log("LuasLingkaran", luas);
+
+            let keliling = 2 * phi *jari_jari;
+            console.log("KelilingLingkaran", keliling)
+
+            document.getElementById('LuasLingkaran').innerHTML = luas;
+            document.getElementById('KelilingLingkaran').innerHTML = keliling;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn JS</title>
+    <script>
+        function fungsiku() {
+            let warna = document.getElementById("nf1").value;
+            console.log ("anda pilih warna: " + warna);
+            document.body.style.backgroundColor = warna;
+        }
+
+        function kursrupiah(){
+            let nilaidolar = 15926;
+            let dolar = document.getElementById("dolar").value;
+            let rupiah =perseFloat("dolar") * nilaidolar
+        }
+    </script>
+</head>
+<body>
+    <form>
+        pilih Warna
+        <select id="nf1" name="Warna" onchange="fungsiku()">
+            <option value="red">Merah</option>
+            <option value="blue">Biru</option>
+            <option value="yellow">Kuning</option>
+            <option value="Green">Hijau</option>
+            <option value="Pink">Pink</option>
+            
+        </select>
+        <hr>
+        Masukan Nilai $
+    </form>
+</body>
+</html>

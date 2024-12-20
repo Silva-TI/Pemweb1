@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plusplus Pharmacy</title>
+    <link rel="stylesheet" href="Lp.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header Section -->
+
+        <header>
+            <div class="navbar" id="Home">
+                <div class="logo">
+                    <img src="../P8_Landing Page Apotik/Image/logoo.jpg" alt="Logo">
+                </div>
+              <nav>
+                <ul style="color: black;">
+                    <a href="#Home">Home</a>
+                    <a href="#Sale">Sale</a>
+                    <a href="#Remaja Jompo">Shop</a>
+                    <a href="#about-us">About Us</a>
+                </ul>
+               
+              </nav>
+              <div class="search-cart">
+                <input type="text" placeholder="Search">
+                <span class="cart-icon">🛒</span>
+                </div>
+            
+            <button id="btn-login"> <i class="fa-solid fa-right-to-bracket"></i> Login</button>
+
+            <div id="popup" class="popup">
+              <h2>Login</h2>
+              <form>
+                <i class="fa-solid fa-user"></i>  <input type="text" placeholder="Username"><br>
+                <i class="fa-solid fa-key"></i>  <input type="password" placeholder="Password"><br>
+                <button type="submit" ><a href="../P8_Landing Page Apotik/LP.html">Login</a></button>
+              </form> 
+            </div>
+          
+            <script>
+              const btnLogin = document.getElementById('btn-login');
+              const popup = document.getElementById('popup');
+          
+              btnLogin.addEventListener('click', () => {
+                popup.style.display = 'block';
+              })
+            </script>
+
+            </div>
+          </header>
+          <main>
+            <section class="hero">
+              <div class="content">
+                <h1 id="Apotek"><span>Plusplus</span> Pharmacy</h1>
+                <p style="text-align:center">Solusi Aman untuk Kebutuhan Obat Anda.</p><br>
+               
+                <button id="Delivery"><a href="../P8_Landing Page Apotik/Pemesanan.html" target="panggilFrame" style="text-decoration: none; color: white;">Pesan Disini</a></button>
+              </div>
+              <div class="image">
+                <img src="../P8_Landing Page Apotik/Image/DESAIN.png" alt="Pharmacist">
+              </div>
+            </section>
+          </main>
+          <footer>
+           
+            </footer>
+
+    
+    <!-- Picks Section -->
+    <section class="picks">
+        <h2>Our Products</h2>
+        <p style="text-align: center; color: black;">Terjamin Paling Lengkap</p>
+        <div class="categories">
+            <section class="categories" style="display: flex; align-items: center; justify-content: center;" >
+                <div class="category-item">
+                    <img src="../P8_Landing Page Apotik/Image/Jompoo.png" alt="Remaja Jompo">
+                    <p style="text-align: center;"><a href="#Remaja Jompo">Remaja Jompo</a></p>
+                </div>
+                <div class="category-item">
+                    <img src="../P8_Landing Page Apotik/Image/Mom.jpg" alt="Momo & Baby">
+                    <p style="text-align: center;"><a href="#Mom">Mom & Baby</a></p>
+                </div>
+                <div class="category-item">
+                    <img src="../P8_Landing Page Apotik/Image/p3k.png" alt="P3K">
+                    <p style="text-align: center; text-decoration: none;"><a href="#p3k">P3K</a></p>
+                </div>
+            </section>
+            
+
+    <!-- Promo Section -->
+    <section class="promo">
+        <div class="promo-item">
+            <div class="slider">
+                <div class="slides">
+                  <div class="slide"><img src="../P8_Landing Page Apotik/Image/Promo.jpg" alt="" id="Sale"></div>
+                  <div class="slide"> <img src="../P8_Landing Page Apotik/Image/bann zwitsal.jpg" alt="Zwitsal"></div>
+                </div>
+              </div>
+            
+              <script>
+                let currentSlide = 0;
+              
+                function autoSlide() {
+                  const slides = document.querySelector('.promo .slides');
+                  const totalSlides = slides.children.length;
+              
+                  currentSlide = (currentSlide + 1) % totalSlides;
+                  slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+                }
+              
+                // Pindah slide setiap 5 detik
+                setInterval(autoSlide, 5000);
+              </script>
+              
+                
+           
+        </div>
+    </section>
+
+  
+
+             <!-- Under $25 Section -->
+    <section class="under-25">
+        <h2 id="Remaja Jompo" alt="Remaja Jompo">Starpack Remaja Jompo</h2>
+        <div class="product-carousel">
+            <div class="product-item">
+                <img src="../P8_Landing Page Apotik/Image/Fresh care.jpg" alt="Freshcare">
+                <p> Rp.14.500</p>
+                <h3>Freshcare</h3>
+                <span>★★★★★</span>
+            </div>
+            <div class="product-item">
+                <img src="../P8_Landing Page Apotik/Image/Hotin.jpg" alt="Hotin">
+                <p>Rp.24.600</p>
+                <h3>Hot In Cream</h3>
+                <span>★★★★★</span>
+            </div>
+            <div class="product-item">
+                <img src="../P8_Landing Page Apotik/Image/Promag.jpg" alt="Promag">
+                <p><span class="sale-price">Rp.9.900</span></p>
+                <h3>Promag Tablet</h3>
+                <span>★★★★★</span>
+            </div>
+            <div class="product-item">
+                <img src="../P8_Landing Page Apotik/Image/p cair.jpg" alt="Promag cair">
+                <p><span class="sale-price">Rp.12.900</span></p>
+                <h3>Promag Cair</h3>
+                <span>★★★★★</span>
+            </div>
+            <div class="product-item">
+                <img src="../P8_Landing Page Apotik/Image/Salon pas.jpg" alt="Salonpas">
+                <p>Rp.11.900</p>
+                <h3>Salonpas Koyo</h3>
+                <span>★★★★★</span>
+            </div>
+            <div class="product-item">
+                <img src="../P8_Landing Page Apotik/Image/Tolak angin.jpg" alt="Tolak Angin">
+                <p>Rp.25.000</p>
+                <h3> Tolak Angin </h3>
+                <span>★★★★★</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="under-25">
+        <h2  id="Mom" alt="Mom & Baby">Mom & Baby</h2>
+        <div class="product-carousel">
+            <div class="product-item">
+                <img src="../P8_Landing Page Apotik/Image/prena m.jpg" alt="Prenagen">
+                <p> Rp.85.000</p>
+                <h3>Prenagen Mommy</h3>
+                <span>★★★★★</span>
+            </div>
+            <div class="product-item">
+                <img src="../P8_Landing Page Apotik/Image/Pampes.jpg" alt="Pampes">
+                <p>Rp.650.000</p>
+                <h3>Pampers Premium Care/Soft</h3>
+                <span>★★★★★</span>
+            </div>
+            <div class="product-item">
+                <img src="../P8_Landing Page Apotik/Image/Baby.jpg" alt="baby">
+                <p><span class="sale-price">Rp.15.000</span></p>
+                <h3>Cussons Baby Cream</h3>
+                <span>★★★★★</span>
+            </div>
+            <div class="product-item">
+                <img src="../P8_Landing Page Apotik/Image/Zwitsal.jpg" alt="Zwitsal">
+                <p>Rp.20.000</p>
+                <h3>Zwitsal Baby Hair Lotion</h3>
+                <span>★★★★★</span>
+            </div>
+            <div class="product-item">
+                <img src="../P8_Landing Page Apotik/Image/Z Parfum.jpg" alt="Zwitsal parfumm">
+                <p>Rp.24.500</p>
+                <h3>Zwitsal Baby Parfum</h3>
+                <span>★★★★★</span>
+            </div>
+            <div class="product-item">
+                <img src="../P8_Landing Page Apotik/Image/sleek.jpg" alt="Sleek Baby">
+                <p>Rp.30.000</p>
+                <h3>Sleek Baby </h3>
+                <span>★★★★★</span>
+            </div>
+        </div>
+    </section>
+    <section class="under-25">
+        <h2  id="p3k" alt="p3ko">P3k</h2>
+        <div class="product-carousel">
+            <div class="product-item">
+                <img src="../P8_Landing Page Apotik/Image/balsem.jpg" alt="balsem">
+                <p> Rp.10.000</p>
+                <h3>Balsem Geliga</h3>
+                <span>★★★★★</span>
+            </div>
+            <div class="product-item">
+                <img src="../P8_Landing Page Apotik/Image/Betadine.jpg" alt="betadine">
+                <p>Rp.25.000</p>
+                <h3>Betadine</h3>
+                <span>★★★★★</span>
+            </div>
+            <div class="product-item">
+                <img src="../P8_Landing Page Apotik/Image/Hansaplas.jpg" alt="Hansaplast">
+                <p><span class="sale-price">Rp.18.000</span></p>
+                <h3>Hansaplast</h3>
+                <span>★★★★★</span>
+            </div>
+            <div class="product-item">
+                <img src="../P8_Landing Page Apotik/Image/plester p.jpg" alt="perban plester">
+                <p><span class="sale-price">Rp.4.750</span></p>
+                <h3>Plester Kassa</h3>
+                <span>★★★★★</span>
+            </div>
+            <div class="product-item">
+                <img src="../P8_Landing Page Apotik/Image/alkohol.jpg" alt="alkohol">
+                <p>Rp.21.000</p>
+                <h3>Alkohol Luka</h3>
+                <span>★★★★★</span>
+            </div>
+            <div class="product-item">
+                <img src="../P8_Landing Page Apotik/Image/kassa.jpg" alt="Kassa">
+                <p>Rp.8.000</p>
+                <h3> Kassa  </h3>
+                <span>★★★★★</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Banners -->
+    <section class="promo-banners">
+        <div class="promo-item autumn-skincare">
+            <img src="../P8_Landing Page Apotik/Image/Gratis Ongkir.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="about-us">
+        <div class="overlay">
+            <div class="container">
+                <h1 style="text-align: left;">About Us</h1>
+                <p>
+                    Plusplus Pharmacy adalah Perusahaan di bidang kesehatan yang berdiri sejak tahun 2019 dan telah terjamin paling lengkap menyediakan berbagai macam keperluan,seperti starpack remaja jompo, keperluan mom & baby juga P3K. Kami berdedikasi untuk menyediakan layanan berkualitas tinggi kepada pelanggan, serta berfokus pada efisiensi dan kepuasan pelanggan. 
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="penulis">
+                        <img src="../P8_Landing Page Apotik/Image/FOTO TUGAS.jpeg" alt="Foto Silva Nurzanatul Dahmalena" style="width:90px ;">    
+                        <div class="info-penulis">
+                            <h3>Silva Nurzanatul Dahmalena</h3>
+                            <p style="font-size: 15px;">Silva, yang lebih akrab disapa Sil, adalah Mahasiswa semester 1 Prodi Teknik Informatika yang sedang menempuh pendidikan di kampus STT Terpadu NurulFikri.
+                                Ia suka menonton film, mendengarkan musik dan membuat Landing Page sederhana seperti website apotek ini contohnya.
+                                Melalui landing page ini , Silva ingin berbagi informasi dan membantu dalam pembelian obat secara online. 
+                                Kenali Silva lebih dekat dengan klik logo dibawah ini.</p><br>
+                                <div class="sosmed">
+                                    <a href="https://Instagram.com/ysxlvy_">
+                                        <i class="fa-brands fa-instagram"></i><br>
+                                      </a>
+                                      <a href="https://youTube.com/silvadahmalena9059">
+                                        <i class="fa-brands fa-youtube"></i><br>
+                                      </a>
+                                      <a href="https://Github.com/Silva-TI">
+                                        <i class="fa-brands fa-github"></i><br>
+                                        </a>
+                                 </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column">
+
+                    <h3 style="color: white;">About</h3>
+                    <ul>
+                        <li> <a href="#about-us">About Us</a></li>
+                        <li> <a href="#Apotek">Online Medicine Orders </a></li>
+                        <li> <a href="#Sale">Promo</a></li>
+                        <li ><a href="#Home">Home Pharmacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+
+                    <h3>Our Products</h3>
+                    <ul>
+                        <li><a href="#Remaja Jompo" >Remaja Jompo</a></li>
+                        <li><a href="#Mom" >Mom and Baby</a></li>
+                        <li><a href="#p3k" >P3K</a></li>
+                    </ul>
+                </div>   
+            
+        </div>
+        <div class="footer-socials">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Discord"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Web"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+          <p class="footer-copyright">
+            <h4>&copy; Copyright by Silva - 2024</h4>
+          </p>
+          <div class="footer-links">
+            <a href="#">Cookies</a>
+            <a href="#">Security</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Statement</a>
+          </div>
+        </div>
+    </footer>
+    
+                    
+        
+    
+</body>
+</html>

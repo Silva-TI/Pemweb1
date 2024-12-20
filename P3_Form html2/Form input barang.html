@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form pemesanan komputer</title>
+    <style>
+      .details {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    gap: 10px; 
+}
+
+.label {
+    text-align: right; 
+    padding-right: 10px; 
+}
+
+.value {
+    text-align: left; 
+}
+
+
+    </style>
+</head>
+<div class="nav">
+    <table border="1" cellpeding="5" width="1000px" align="center">
+        <tr>
+    <th width="100">Home</th>
+    <th width="100">Register</th>
+    <th width="100">Policy</th>
+    <th width="100">About</th>
+        </tr>
+     </table>
+</div>
+<form action="" method="post" style="margin-top: 30px;">
+    <table>
+
+    <tr>
+        <td style="width: 300px; vertical-align: top;" rowspan="12">
+            <img src="Macbook.jpg" alt="komputer" style="width: 250px;height: auto; border: 1px solid black;">
+        </td>
+        <td style="vertical-align: text-top;">
+        <div>
+            <b>Tittle Here: </b><br>
+            <b>Description : Year: 2004 <br> Model: <br> Condition: Mint</b>
+        </div>
+        </td>    
+                <td style="vertical-align:top;">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </td>
+    </tr>
+            <tr>
+                <td>
+                    <b>Total amount : E800</b><br>
+               
+                    <b>Pay to : 123-456-789-0</b>
+                </td>
+                <td style="vertical-align: text-top;">
+                    <span type="text" name="Account_number" id="Account_number" style="width: 400px; height: 23px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Payment type : </b>
+                </td>
+                <td>
+                    <select name="Payment_type" id="Payment_type" style="width: 400px; height: 30px;">
+                    <option value="Visa_Debit">Visa Debit</option>
+                    <option value="Credit">Credit</option>
+                    <option value="Debit">Debit</option>
+                    <option value="E-wallet">E-wallet</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Accountt Holder :</b>
+                </td>
+                <td>
+                    <input type="text" name="Account_Holder" id="Account_Holder" placeholder="Name Here" style="width: 400px; height: 30;">
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="3" style="vertical-align: text-top;">
+                    <b>Account No :</b>
+                </td>
+                <td>
+                    <input type="number" name="Account_No" id="Account_No" placeholder="123-456-789-0" style="width: 400px; height:23px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="send_to_mobile_phone" id="send_to_phone_mobile" style="accent-color: green"checked>
+                    <label style="color: green;" for="send_to_mobile_phone">send to phone mobile</label>
+                </td>
+                <tr>
+                <td>
+                    <input type="checkbox" name="email_me_copy_of_transaction" id="email_me_copy_of_transaction" style="accent-color: green" checked> 
+                    <label style="color: green;"for="email_me_copy_of_transaction">email me copy of transaction</label>
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td>
+                    <b> send to mobile phone :</b>
+                </td>
+                <td>
+                    <input type="text" name="send_to_mobile_phone" placeholder="1234567890 1234567891" style="width: 400px; height: 23;">
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: text-top;" rowspan="2">
+                    <b>send to email :</b>
+                </td>
+                <td>
+                    <input type="text" name="send_to_email" id="send_to_email" placeholder="mfmm2g13@soton.ac.uk, fys_06@yahoo.com"  style="width: 400px; height: 23px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" style="background-color: green; color: white; margin: 20px;">Pay usung Quidlink </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pemesanan Obat</title>
+  <link rel="stylesheet" href="pemesanan.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Form Pemesanan Obat</h1>
+    <form id="orderForm">
+      <div class="form-group">
+        <label for="name">Nama Lengkap:</label>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+      </div>
+      <div class="form-group">
+        <label for="medicine">Nama Obat:</label>
+        <input type="text" id="medicine" name="medicine" placeholder="Masukkan nama obat" required>
+      </div>
+      <div class="form-group">
+        <label for="quantity">Jumlah:</label>
+        <input type="number" id="quantity" name="quantity" placeholder="Masukkan jumlah obat" min="1" required>
+      </div>
+      <div class="form-group">
+        <label for="payment">Metode Pembayaran:</label>
+        <select id="payment" name="payment" required>
+          <option value="" disabled selected>Pilih metode pembayaran</option>
+          <option value="cash">Bayar di tempat</option>
+          <option value="transfer">Transfer Bank</option>
+          <option value="credit">Kartu Kredit</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="address">Alamat Pengiriman:</label>
+        <textarea id="address" name="address" rows="4" placeholder="Masukkan alamat lengkap Anda" required></textarea>
+      </div>
+      <button type="submit"><a href="tq.html"  style= "color: white; text-decoration: none;">Pesan Sekarang</a></button>
+    </form>
+   
+
+
+
+  <script>
+    // JavaScript untuk menangani data form
+    const form = document.getElementById('orderForm');
+    const orderSummary = document.getElementById('orderSummary');
+    const summaryDetails = document.getElementById('summaryDetails');
+    
+    
+    // Ambil data dari form
+    const name = document.getElementById('name').value;
+    const medicine = document.getElementById('medicine').value;
+    const quantity = document.getElementById('quantity').value;
+    const payment = document.getElementById('payment').value;
+    const address = document.getElementById('address').value;
+    
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Mencegah refresh halaman
+    }
+)
+
+    // Fungsi untuk mereset form
+    function resetForm() {
+      form.reset();
+      form.classList.remove('hidden');
+      orderSummary.classList.add('hidden');
+    }
+  </script>
+</body>
+</html>

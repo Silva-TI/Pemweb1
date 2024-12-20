@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, article, section, aside, footer {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        header, footer {
+            background-color: yellow;
+        }
+        nav {
+            background-color: lightgreen;
+        }
+        article {
+            background-color: lightorange;
+        }
+        aside {
+            background-color: lightblue;
+            float: right;
+            width: 30%;
+        }
+        article {
+            float: left;
+            width: 65%;
+        }
+        section {
+            background-color: lightcoral;
+            margin-bottom: 10px;
+        }
+        footer {
+            clear: both;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <article>
+        
+        <section>
+            <h2>Section 1</h2>
+            <p>This is the first section of the article.</p>
+        </section>
+        <section>
+            <h2>Section 2</h2>
+            <p>This is the second section of the article.</p>
+        </section>
+        <section>
+            <h2>Section 3</h2>
+            <p>This is the third section of the article.</p>
+        </section>
+    </article>
+
+    <aside>
+        <h3>Related Information</h3>
+        <p>This is some additional information in the aside section.</p>
+    </aside>
+
+    <footer>
+        <p>Copyright © 2024 My Website</p>
+    </footer>
+
+</body>
+</html>

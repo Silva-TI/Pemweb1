@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesan Obat</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; /* Pastikan elemen memenuhi tinggi viewport */
+      background-color: #f8f9fa; /* Warna latar */
+      width: 100%;
+    }
+    .container {
+      text-align: center;
+      display: flex;
+      flex-direction: column; /* Agar elemen berada dalam satu kolom */
+      align-items: center;
+      gap: 20px; /* Jarak antar elemen */
+    }
+    .container img {
+      max-width: 150px; /* Sesuaikan ukuran gambar */
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #6c757d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #495057;
+    }
+    .thank-you-message {
+      font-size: 1.2em;
+      color: #28a745;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="thank-you-message">Terima kasih sudah membeli!</p>
+    <img src="../P8_Landing Page Apotik/Image/Terimakasih.png" alt="Terimakasih">
+    <button id="backButton">Kembali ke Halaman Awal</button>
+  </div>
+
+  <script>
+    const backButton = document.getElementById('backButton');
+    backButton.addEventListener('click', function() {
+      // Arahkan ke halaman awal (ganti "LP.html" dengan URL halaman Anda)
+      window.location.href = "LP.html";
+    });
+  </script>
+</body>
+</html>

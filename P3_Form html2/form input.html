@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 700px;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .header input {
+            width: 300px;
+            padding: 5px;
+        }
+        .nav {
+            margin-bottom: 20px;
+        }
+        .nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .product {
+            display: flex;
+        }
+        .product .image {
+            width: 200px;
+            height: 200px;
+            background-color: #ddd;
+        }
+        .product .details {
+            padding-left: 20px;
+        }
+        .details p {
+            margin: 5px 0;
+        }
+        .form-group {
+            margin: 10px 0;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+        }
+        .form-group input[type="checkbox"] {
+            width: auto;
+        }
+        .btn {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">A Web Page</div>
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <div class="nav">
+            <table border="1" cellpeding="5" width="1000px" align="center">
+                <tr>
+            <th width="100">Home</th>
+            <th width="100">Register</th>
+            <th width="100">Policy</th>
+            <th width="100">About</th>
+                </tr>
+             </table>
+        </div>
+
+        <div class="product">
+            <div class="image">
+            <img src="Macbook.jpg" alt="laptop" class="image-preview" id="image-preview">
+            <textarea>
+                <p><strong>Title Here:</strong> MacBook Air £800</p>
+                <p><strong>Description:</strong></p>
+                <p>Year: 2009</p>
+                <p>Model: </p>
+                <p>Condition: Mint</p>
+            </textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="totalAmount">Total Amount</label>
+            <input type="text" id="totalAmount" value="£800" readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="payTo">Pay to</label>
+            <input type="text" id="payTo" value="123-456-789-0">
+        </div>
+
+        <div class="form-group">
+            <label for="paymentType">Payment Type</label>
+            <select id="paymentType">
+                <option value="Visa Debit">Visa Debit</option>
+                <option value="MasterCard">MasterCard</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="accountHolder">Account Holder</label>
+            <input type="text" id="accountHolder" placeholder="Name Here">
+        </div>
+
+        <div class="form-group">
+            <label for="accountNo">Account No</label>
+            <input type="text" id="accountNo" value="123-456-789-0">
+        </div>
+
+        <div class="form-group">
+            <input type="checkbox" id="sendToMobile" checked>
+            <label for="sendToMobile">Send to Mobile Phone</label>
+        </div>
+
+        <div class="form-group">
+            <input type="checkbox" id="emailCopy">
+            <label for="emailCopy">Email me copy of transaction</label>
+        </div>
+
+        <div class="form-group">
+            <label for="mobilePhone">Send to Mobile Phone</label>
+            <input type="text" id="mobilePhone" value="1234567890, 1234567891">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Send to Email</label>
+            <source type="text" id="email" value="mrfmm213@soton.ac.uk, fys_06@yahoo.com">
+        </div>
+
+        <div class="form-group">
+            <button class="btn">Pay using QuidLink</button>
+        </div>
+    </div>
+
+</body>
+</html>

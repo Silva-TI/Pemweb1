@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            width: 150px;
+        }
+
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        .image-preview {
+            width: 150px;
+            height: 150px;
+            background-color: #ddd;
+            display: block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <h2>Form Pemesanan Barang</h2>
+        <div style="display: flex;">
+            <div>
+                <!-- File Upload Button-->
+                <table>
+                    <tr style="vertical-align: top;">
+                        <td>
+                            <div>
+                                <img src="Macbook.jpg" alt="laptop" class="image-preview" id="image-preview">
+                                <!-- File Upload Button-->
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <table>
+                <td>
+                    <div class="form-group">
+                        <label for="title">Title Here:</label>
+                        <input type="text" id="title" name="title" value="MacBook Air E800">
+                        </div>">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description" rows="3">Year: 2004 
+Model: E800 
+Condition: Mint</textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="account-number">Account Number:</label>
+                        <input type="text" id="account-number" name="account-number" value="123-456-789-0">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bank">Bank:</label>
+                        <select id="bank" name="bank">
+                            <option value="hsbc">HSBC</option>
+                            <option value="bni">BNI</option>
+                            <option value="bca">BCA</option>
+                            <option value="mandiri">Mandiri</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="account-holder">Account Holder:</label>
+                        <input type="text" id="account-holder" name="account-holder" value="Name Here">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="transaction">Transaction:</label>
+                        <input type="text" id="transaction" name="transaction" value="1">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="checkbox" id="send-mobile" name="send-mobile" checked>
+                        <label for="send-mobile">Send to Mobile Phone</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="checkbox" id="send-email" name="send-email" checked>
+                        <label for="send-email">Send to Email</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mobile-phone">Send to Mobile Phone:</label>
+                        <input type="text" id="mobile-phone" name="mobile-phone" value="1234567890, 1234567891">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Send to Email:</label>
+                        <input type="text" id="email" name="email" value="mfmm2g13@soton.ac.uk, fys_06@yahoo.com">
+                    </div>
+                    <button type="submit" class="submit-btn">Generate Nabr Link</button>
+                </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
